@@ -13,6 +13,8 @@ namespace TLSharpSamples
         public static int TelegramApiId => GetSettings<int>("Telegram.ApiKey");
         public static string TelegramApiKey => GetSettings<string>("Telegram.ApiValue");
 
+        public static string TelegramPhoneNumber => GetSettings<string>("Telegram.PhoneNumber");
+
         private static T GetSettings<T>(string keyName) where T : IConvertible
         {
 
